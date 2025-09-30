@@ -1,5 +1,5 @@
 {% set name = "interactivefitting" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://git.ligo.org/gabriele-vajente/interactivefitting/-/archive/{{ version }}/interactivefitting-{{ version }}.tar.gz
-  sha256: 24136ef3dbc5aa7d21dea9b2031e1f1718a6518e00be26e7f80acf1402f48743
+  sha256: 50b139b34497f43662db94a47d5f40c292d0b22821187491d7922eefb91b35be
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
